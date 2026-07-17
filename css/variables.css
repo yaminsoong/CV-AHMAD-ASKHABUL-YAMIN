@@ -1,0 +1,45 @@
+:root {
+    /* Color Palette - Dark Premium */
+    --color-bg-base: #050505;
+    --color-bg-surface: rgba(20, 20, 20, 0.4);
+    
+    /* Typography Colors */
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #94a3b8;
+    
+    /* Aurora & Accent Colors */
+    --color-accent-cyan: #06b6d4;
+    --color-accent-purple: #8b5cf6;
+    
+    /* Glassmorphism System */
+    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    --glass-blur: blur(16px);
+
+    /* Typography & Spacing */
+    --font-main: 'Inter', sans-serif;
+    --container-width: 1100px;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-bg-base); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-accent-cyan); }
