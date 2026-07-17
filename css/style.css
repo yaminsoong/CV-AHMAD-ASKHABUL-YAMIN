@@ -99,3 +99,63 @@ nav a:hover { color: var(--color-accent-cyan); }
 .social-links a { color: var(--color-text-primary); text-decoration: none; font-weight: 600; transition: var(--transition-smooth); }
 .social-links a:hover { color: var(--color-accent-cyan); }
 .copyright { color: var(--color-text-secondary); font-size: 0.9rem; }
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    /* Membuat card besar yang responsif. Di layar lebar akan jadi 2 kolom, di HP 1 kolom */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    color: var(--color-accent-cyan);
+}
+
+.project-card p {
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+/* Responsive adjustment untuk project card di layar HP */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Skills Section */
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    text-align: left;
+    padding: 1.5rem 2.5rem;
+}
+
+.skill-category h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+}
+
+.skill-category p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}
